@@ -25,10 +25,6 @@ Route::get('/login', function () {
     return view('auth.login.index');
 });
 
-Route::get('/register', function () {
-    return view('auth.register.index');
-});
-
 Route::get('/about', function () {
     return view('client.detail.about');
 });
@@ -48,3 +44,11 @@ Route::get('/contact', function () {
 Route::get('/admin', function () {
     return view('admin.dashboard.index');
 });
+
+use App\Http\Controllers\Auth\RegisterController;
+
+Route::get('/register', [RegisterController::class, 'showRegistrationForm']);
+Route::post('/register', [RegisterController::class, 'register']);
+Route:: get('/home', function() {
+    return view('client.home.index'); //masuk ke halaman utama
+})->name('home');

@@ -11,7 +11,7 @@
     </button>
 </div>
 <div class="">
-    <figure class="px-20">
+    <figure class="mx-auto">
         <img src="{{ asset('img/asset/noun-leaf-7189034.svg')}}" alt="" width="100px">
     </figure>
 </div>

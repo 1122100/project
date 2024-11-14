@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollable-element {
+    height: 300px; /* Atur tinggi elemen */
+    overflow-y: scroll; /* Biarkan scroll bisa digunakan */
+    overflow-x: hidden; /* Sembunyikan horizontal scrollbar jika ada */
+    overflow: hidden;
+}
+
+.scrollable-element::-webkit-scrollbar {
+    display: none; /* Menyembunyikan scrollbar untuk Chrome dan Safari */
+}
+
+.scrollable-element {
+    scrollbar-width: none; /* Menyembunyikan scrollbar di Firefox */
+}
+

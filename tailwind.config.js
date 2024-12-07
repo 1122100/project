@@ -41,13 +41,13 @@ export default {
       },
     },
 
-    
+
 
     plugins: [
       require('daisyui'),
       require('@tailwindcss/line-clamp'),
       require('preline/plugin'),
-      
+
     //   require('@tailwindcss/forms'),
     ],
   }

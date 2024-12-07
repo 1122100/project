@@ -18,27 +18,46 @@
             <img src="{{ asset('img/plantcontent.jpg') }}" class="w-full h-full object-cover shrink-0" />
         </div>
     </div>
-
-
-
-
-    <br>
-
-    <div class="container">
-        <div class="flex items-center min-h-[140px] w-full overflow-x-scroll rounded-lg p-6 lg:overflow-visible">
-            <img
-                class="object-cover object-center rounded-full h-96 w-96"
-                src="https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
-                alt="nature image"
-            />
-            <div class="ml-6">
-                <h3 class="text-4xl font-bold text-teal-800 mb-2">Ini adalah sebuah tanaman</h3>
-                <p class="text-lg text-gray-700">Kami merekomendasikan sebuah tanaman yang cocok di halaman rumah Anda.</p>
-            </div>
+{{-- content awal --}}
+<div class="w-full max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 py-8">
+    <a href="/categories/programming-tech?source=hplo_cat_sec_TOP&pos=1" class="flex flex-col items-center text-center">
+        <div class="w-24 h-24 flex items-center justify-center bg-gray-100 rounded-full">
+            <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/programming-tech-thin.56382a2.svg" alt="Programming & Tech" class="h-16">
         </div>
-    </div>
+        <p class="mt-4 text-lg font-semibold text-gray-800">Programming & Tech</p>
+    </a>
+
+    <a href="/categories/graphics-design?source=hplo_cat_sec_TOP&pos=2" class="flex flex-col items-center text-center">
+        <div class="w-24 h-24 flex items-center justify-center bg-gray-100 rounded-full">
+            <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/graphics-design-thin.ff38893.svg" alt="Graphics & Design" class="h-16">
+        </div>
+        <p class="mt-4 text-lg font-semibold text-gray-800">Graphics & Design</p>
+    </a>
+
+    <a href="/categories/online-marketing?source=hplo_cat_sec_TOP&pos=3" class="flex flex-col items-center text-center">
+        <div class="w-24 h-24 flex items-center justify-center bg-gray-100 rounded-full">
+            <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/digital-marketing-thin.68edb44.svg" alt="Digital Marketing" class="h-16">
+        </div>
+        <p class="mt-4 text-lg font-semibold text-gray-800">Digital Marketing</p>
+    </a>
+
+    <a href="/categories/writing-translation?source=hplo_cat_sec_TOP&pos=4" class="flex flex-col items-center text-center">
+        <div class="w-24 h-24 flex items-center justify-center bg-gray-100 rounded-full">
+            <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/writing-translation-thin.fd3699b.svg" alt="Writing & Translation" class="h-16">
+        </div>
+        <p class="mt-4 text-lg font-semibold text-gray-800">Writing & Translation</p>
+    </a>
+
+    <a href="/categories/video-animation?source=hplo_cat_sec_TOP&pos=5" class="flex flex-col items-center text-center">
+        <div class="w-24 h-24 flex items-center justify-center bg-gray-100 rounded-full">
+            <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/video-animation-thin.9d3f24d.svg" alt="Video & Animation" class="h-16">
+        </div>
+        <p class="mt-4 text-lg font-semibold text-gray-800">Video & Animation</p>
+    </a>
 
 
+
+</div>
 
     <br>
     <!--product-->
@@ -59,7 +78,6 @@
                     <h2 class="card-title">thats plant!</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">view</button>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -72,7 +90,6 @@
                     <h2 class="card-title">thats plant</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">view</button>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -85,7 +102,6 @@
                     <h2 class="card-title">thats plant</h2>
                     <p>ini adalah tanaman crousan yang </p>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">view </button>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -99,7 +115,6 @@
                     <h2 class="card-title">thats plant!</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">view </button>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -109,32 +124,147 @@
 
 
 
-    <div class="container px-6 py-8 mx-auto items-center bg-white dark:bg-gray-900">
-        <h2 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Our Team</h2>
-        <div class="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            <div class="w-full max-w-xs text-center items-center mx-auto">
-                <img class="object-cover object-center w-full h-48 mx-auto rounded-lg"
-                    src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=739&q=80"
-                    alt="avatar" />
+    <!-- TOP 5 OF THE WEEK -->
+<div class="container mx-auto py-16">
+    <h2 class="text-3xl font-semibold text-gray-800 text-center mb-12">Top 5 of the week</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
 
-                <div class="mt-2">
-                    <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Ahmed Omer</h3>
-                    <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">CEO</span>
-                </div>
+        <!-- Card 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300">
+            <img src="{{ asset('img/productcollection1.jpg')}}" alt="Dracaena Trifasciata" class="w-full h-64 object-cover">
+            <div class="p-4 text-center">
+                <h3 class="text-xl font-bold text-gray-800">Dracaena Trifasciata</h3>
+                <p class="text-gray-600">Air purifier plant.</p>
             </div>
+        </div>
 
-            <div class="w-full max-w-xs text-center">
-                <img class="object-cover object-center w-full h-48 mx-auto rounded-lg"
-                    src="https://images.unsplash.com/photo-1516756587022-7891ad56a8cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
-                    alt="avatar" />
+        <!-- Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300">
+            <img src="{{ asset ('img/productcollection2.jpg')}}" alt="Crassula Ovata" class="w-full h-64 object-cover">
+            <div class="p-4 text-center">
+                <h3 class="text-xl font-bold text-gray-800">Crassula Ovata</h3>
+                <p class="text-gray-600">Good luck plant.</p>
+            </div>
+        </div>
 
-                <div class="mt-2">
-                    <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Jane Doe</h3>
-                    <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">Co-founder</span>
-                </div>
+        <!-- Card 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300">
+            <img src="{{ asset ('img/productcollection3.jpg')}}" alt="Haworthia Attenuata" class="w-full h-64 object-cover">
+            <div class="p-4 text-center">
+                <h3 class="text-xl font-bold text-gray-800">Haworthia Attenuata</h3>
+                <p class="text-gray-600">Easy to grow succulent.</p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300">
+            <img src="{{ asset ('img/productcollection4.jpg')}}" alt="Browningia Hertlingiana" class="w-full h-64 object-cover">
+            <div class="p-4 text-center">
+                <h3 class="text-xl font-bold text-gray-800">Browningia Hertlingiana</h3>
+                <p class="text-gray-600">Unique cactus plant.</p>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300">
+            <img src="{{ asset ('img/productcollection5.jpg')}}" alt="Chlorophytum Comosum" class="w-full h-64 object-cover">
+            <div class="p-4 text-center">
+                <h3 class="text-xl font-bold text-gray-800">Chlorophytum Comosum</h3>
+                <p class="text-gray-600">Spider plant.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Featured Product Section -->
+<div class="bg-gray-50 py-16">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-12">
+        <div class="lg:w-1/2">
+            <img src="{{ asset ('img/allplant1.jpg')}}" alt="Feature Plant" class="rounded-lg shadow-lg">
+        </div>
+        <div class="lg:w-1/2">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Nullam Ultrices Purus</h2>
+            <p class="text-gray-600 mb-6">
+                Temukan tanaman eksklusif yang akan menyegarkan rumah Anda.
+            </p>
+            <button class="px-6 py-3 bg-green-600 text-white rounded-full shadow-lg hover:bg-green-700 transition">
+                Beli Sekarang
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- TOP 5 IKLIM TROPIS -->
+<div class="container mx-auto py-16">
+    <h2 class="text-3xl font-semibold text-gray-800 text-center mb-12">Top 5 Iklim Tropis</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+
+        <!-- Card 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300">
+            <img src="{{ asset('img/productcollection1a.jpg')}}" alt="Dracaena Trifasciata" class="w-full h-64 object-cover">
+            <div class="p-4 text-center">
+                <h3 class="text-xl font-bold text-gray-800">Dracaena Trifasciata</h3>
+                <p class="text-gray-600">Air purifier plant.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300">
+            <img src="{{ asset ('img/productcollection1c.jpg')}}" alt="Crassula Ovata" class="w-full h-64 object-cover">
+            <div class="p-4 text-center">
+                <h3 class="text-xl font-bold text-gray-800">Crassula Ovata</h3>
+                <p class="text-gray-600">Good luck plant.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300">
+            <img src="{{ asset ('img/productcollection1d.jpg')}}" alt="Haworthia Attenuata" class="w-full h-64 object-cover">
+            <div class="p-4 text-center">
+                <h3 class="text-xl font-bold text-gray-800">Haworthia Attenuata</h3>
+                <p class="text-gray-600">Easy to grow succulent.</p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300">
+            <img src="{{ asset ('img/productcollection1e.jpg')}}" alt="Browningia Hertlingiana" class="w-full h-64 object-cover">
+            <div class="p-4 text-center">
+                <h3 class="text-xl font-bold text-gray-800">Browningia Hertlingiana</h3>
+                <p class="text-gray-600">Unique cactus plant.</p>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300">
+            <img src="{{ asset ('img/productcollection1f.jpg')}}" alt="Chlorophytum Comosum" class="w-full h-64 object-cover">
+            <div class="p-4 text-center">
+                <h3 class="text-xl font-bold text-gray-800">Chlorophytum Comosum</h3>
+                <p class="text-gray-600">Spider plant.</p>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Featured Product Section -->
+<div class="bg-gray-50 py-16">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-12">
+        <div class="lg:w-1/2">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Nullam Ultrices Purus</h2>
+            <p class="text-gray-600 mb-6">
+                Temukan tanaman eksklusif yang akan menyegarkan rumah Anda.
+            </p>
+            <button class="px-6 py-3 bg-green-600 text-white rounded-full shadow-lg hover:bg-green-700 transition">
+                Beli Sekarang
+            </button>
+        </div>
+        <div class="lg:w-1/2">
+            <img src="{{ asset ('img/allplant2.jpg')}}" alt="Feature Plant" class="rounded-lg shadow-lg">
+        </div>
+    </div>
+</div>
+
 
     <!--foooter-->
     <foote class="bg-white dark:bg-gray-900">

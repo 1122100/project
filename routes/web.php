@@ -38,7 +38,7 @@ Route::get('/shop', function () {
 });
 
 Route::get('/contact', function () {
-    return view('client.detail.collection');
+    return view('client.detail.contact');
 });
 
 Route::get('/admin', function () {

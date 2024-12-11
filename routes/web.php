@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AboutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+use App\Http\Controllers\PlantShopController;
+
+Route::get('/about', [PlantShopController::class, 'index'])->name('client.detail.about');
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -25,9 +30,8 @@ Route::get('/login', function () {
     return view('auth.login.index');
 });
 
-Route::get('/about', function () {
-    return view('client.detail.about');
-});
+// Route::get('/about', [AboutController::class, 'index'])->name('client.detail.about');
+
 
 Route::get('/collection', function () {
     return view('client.detail.collection');
